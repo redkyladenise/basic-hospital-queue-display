@@ -17,3 +17,6 @@ Designed for clarity and efficiency in tracking when patients are called for doc
 - Real‑time queue updates
 - Category‑based patient grouping
 - Clear display for hospital waiting areas
+
+**Demo Screenshot
+![Queue Display](assets/images/demo.jpg)
