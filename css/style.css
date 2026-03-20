@@ -1,0 +1,213 @@
+:root {
+    --main-color: #5352c1;
+    --secondary-color: #c5b8fb;
+    --accent-color: #ad99ff;
+    --button-color: #5654e3;
+    --add-all-color:#457a00;
+    --clear-all-color: #ff7d7d;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f7f3;
+}
+
+header {
+    background-color: var(--main-color);
+    color: white;
+    padding: 5px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.logo img, .empty {
+    width: 120px;
+    height: 100px;
+}
+
+.header-text {
+    flex-grow: 1;
+    text-align: center;
+}
+
+.header-text h1 {
+    font-size: 40px;
+}
+
+.header-text p {
+    font-size: 20px;
+}
+
+main {
+    padding: 15px 80px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.card-section {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+    
+}
+
+.card1, .card2 {
+    /* border: 1px solid black; */
+    width: 275px;
+    height: 250px;
+}
+
+.general-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.add-all-btn, .clear-all-btn {
+    width: 150px;
+    height: 35px;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    border: none;
+}
+
+.add-all-btn {
+    background-color: var(--add-all-color);
+}
+
+.clear-all-btn {
+    background-color: var(--clear-all-color);
+}
+
+.card-title {
+    background-color: var(--main-color);
+    font-size: 17px;
+    color: white;
+    padding: 2px 0px;
+    text-align: center;
+}
+
+.card1 {
+    background-color: var(--secondary-color);
+    text-align: center;
+}
+
+.card1 > .card-number {
+    font-size: 60px;
+    margin-top: 10px;
+}
+
+
+.card1 .plus-btn,
+.card1 .minus-btn,
+.card1 .reset-btn {
+    background-color: var(--button-color);
+    color: white;
+    font-size: 15px;
+    padding: 5px 15px;
+    border: none;
+    border-radius: 20px;
+    margin: 10px 5px 0px;
+}
+
+.plus-btn,
+.minus-btn,
+.reset-btn,
+.add-all-btn,
+.clear-all-btn {
+    cursor: pointer;
+    
+}
+
+.plus-btn:hover, 
+.minus-btn:hover,
+.reset-btn:hover,
+.add-all-btn:hover,
+.clear-all-btn:hover {
+    transform: scale(1.05);
+    filter:brightness(1.2);
+}
+
+.card2 {
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.card-division {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid black; */
+    text-align: center;
+    gap: 1px;
+    flex-grow:1;
+}
+
+.card-div-2 {
+    background-color: var(--accent-color);
+    flex-grow: 1;
+}
+
+.card-div-1 {
+    flex-grow: 1;
+}
+
+.card-div-title {
+    background-color: var(--button-color);
+    font-size: 17px;
+    font-weight: bold;
+    color: white;
+    padding: 3px 5px;
+}
+
+.card-div-number {
+    font-size: 60px;
+}
+
+.card2 .plus-btn,
+.card2 .minus-btn,
+.card2 .reset-btn {
+    background-color: var(--button-color);
+    color: white;
+    font-size: 12px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 20px;
+    margin: 0px 2px;
+}
+
+.minus-btn:disabled {
+    cursor: not-allowed;
+}
+
+.add-mode {
+    background-color: #bfecac;
+}
+
+.remove-mode {
+    background-color: #ffbdbd;
+}
